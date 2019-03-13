@@ -1,24 +1,91 @@
+
 .wrapper {
-  display: grid;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  /* grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: 'title navbar navbar navbar',
+  'roomlist currentroom currentroom currentroom',
+  'roomlist currentroom currentroom currentroom',
+  'chtrlist currentroom currentroom currentroom',
+  'chtrlist messageinput messageinput messageinput' ; */
 }
 
-.title {
-  font-size: 5em;
-}
+  .header {
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    border-bottom: 1px solid black;
+  }
 
-.navbarLayout {
+    .title {
+      /* flex: 1; */
+      display: block;
+      /* grid-area: title; */
+      font-family: 'Righteous', cursive;
+      font-size: 4em;
+      text-align: center;
+      text-shadow: 5px 5px 5px grey;
+      border: 1px solid black;
+      box-shadow: 5px 5px 5px grey;
+      width: 25vw;
+      margin: auto;
+      padding: 0.1em;
+    }
 
-}
+    .navbarLayout {
+      flex: 2;
+      /* border: 0 0 1px 0 solid black; */
+      /* grid-area: navbar; */
+    }
 
-.listsLayout {
-  
+  .listsLayout {
+    display: block;
+    position: relative;
+    /* flex-direction: column; */
+    width: 25vw;
+  }
 
-}
+    .roomList {
+      display: block;
+      float: left;
+      /* flex: 1; */
+      /* grid-area: roomlist; */
+    }
 
-.roomLayout {
-  
-}
+    .chtrsList {
+      display: block;
+      float: left;
+      /* flex: 2; */
+      /* grid-area: chtrlist; */
+    }
 
-.inputLayout {
+  .roomLayout {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1em;
+    max-height: 80vh;
+    /* border-top: 1px solid black; */
+    border-left: 1px solid black;
+    /* grid-area: currentroom; */
+  }
 
-}
+    .currentRoom {
+      display: block;
+      flex: 1;
+      margin: auto;
+      padding: 1em;
+    }
+
+    .inputLayout {
+      /* flex: 2; */
+      display: fixed;
+      /* margin: auto; */
+      padding: 1em;
+      bottom: 0;
+      border-top: 1px solid black;
+      border-left: 1px solid black;
+      /* grid-area: messageinput; */
+    }

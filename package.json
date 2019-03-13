@@ -1,5 +1,5 @@
 {
-  "name": "cht-app",
+  "name": "chtr-app",
   "version": "1.0.0",
   "description": "A chat web app utilizing socket.io and the GIPHY API.",
   "main": "index.js",
@@ -27,10 +27,16 @@
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
     "express": "^4.16.4",
+    "mysql2": "^1.6.5",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "sequelize": "^4.42.0",
     "socket.io": "^2.2.0",
-    "style-loader": "^0.23.1"
+    "socket.io-client": "^2.2.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.5"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.2.3"
   }
 }

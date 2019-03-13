@@ -1,27 +1,134 @@
 .container {
-
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  /* top: 0;
+  left: 0; */
+  margin: auto;
+  /* padding: 1em; */
 }
 
 .profileInfo {
-  
+  margin: auto;
+  padding: 1em;
+  /* border: 1px solid black; */
+  flex: 1;
+  display: flex;
 }
 
-.profilePic {
+  .signedIn {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-left: 1px solid black;
+    margin: auto;
+    padding: 1em;
+    flex: 1;
+  }
 
+  .profilePic {
+    width: 25%;
+    height: 25%;
+    /* border-radius: 50%; */
+    /* border-left: 1px solid black; */
+    flex: 2;
+    margin: auto;
+    padding: 1em;
+  }
+
+  .profileName {
+    flex: 3;
+    font-family: 'Righteous', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    /* text-align: center; */
+    margin: auto;
+    padding: 1em;
+    border: 1px solid black;
+    text-shadow: 2px 2px 2px grey;
+    box-shadow: 2px 2px 2px grey;
+  }
+
+.roomInfo {
+  margin: auto;
+  padding: 1em;
+  flex: 2;
+  display: flex;
+}
+  .occupying {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-left: 1px solid black;
+    margin: auto;
+    padding: 1em;
+    /* flex: 1; */
+  }
+
+  .room {
+    font-family: 'Righteous', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+    padding: 1em;
+    border: 1px solid black;
+    text-shadow: 2px 2px 2px grey;
+    box-shadow: 2px 2px 2px grey;
+    /* flex: 2; */
+  }
+
+  /* .timestamp {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-right: 1px solid black;
+    margin: auto;
+    padding: 1em;
+    /* flex: 1; 
+  } */
+
+.controls {
+  margin: auto;
+  padding: 1em;
+  flex: 3;
+  display: flex;
 }
 
-.profileName {
+  .settings {
+    font-family: 'Righteous', sans-serif;
+    text-align: center;
+    /* border-left: 1px solid black; */
+    border: 1px solid silver;
+    margin: auto;
+    padding: 1em;
+    /* flex: 2; */
+    cursor: pointer;
+  }
 
-}
+    .settings:hover {
+      font-weight: bold;
+      /* border-left: 2px solid black; */
+      border: 1px solid black;
+      text-shadow: 2px 2px 2px grey;
+      box-shadow: 2px 2px 2px grey;
+    }
 
-.room {
+  .signOut {
+    font-family: 'Righteous', sans-serif;
+    text-align: center;
+    /* border-left: 1px solid black; */
+    border: 1px solid silver;
+    margin: auto;
+    padding: 1em;
+    /* flex: 1; */
+    cursor: pointer;
+  }
 
-}
-
-.settings {
-
-}
-
-.signOut {
-
-}
+    .signOut:hover {
+      font-weight: bold;
+      /* border-left: 2px solid black; */
+      border: 1px solid black;
+      text-shadow: 2px 2px 2px grey;
+      box-shadow: 2px 2px 2px grey;
+    }

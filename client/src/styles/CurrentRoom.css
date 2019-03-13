@@ -1,23 +1,84 @@
 .container {
-
+  display: block;
+  max-height: 100%;
+  margin: auto;
+  padding: 1em;
+  overflow: scroll;
 }
 
-.entries {
+  .entries {
+    /* border-left: 1px solid black; */
+    height: 100%;
+    margin: auto;
+    padding: 1em;
+  }
 
-}
+    .selfEntry {
+      display: flex;
+      font-family: 'Raleway', sans-serif;
+      margin: auto;
+      padding: 1em;
+      width: 50%;
+      float: right;
+      border-top: 1px solid silver;
+      border-right: 1px solid silver;
+      border-bottom: 1px solid black;
+      border-left: 1px solid black;
+    }
 
-.entry {
+      .selfChtr {
+        /* flex: 1; */
+        display: inline-block;
+        font-family: 'Righteous', sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+        margin: auto;
+        padding: 0.5em;
+        border: 1px solid black;
+        text-shadow: 2px 2px 2px grey;
+        box-shadow: 2px 2px 2px grey;
+      }
+      
+    .entry {
+      display: flex;
+      font-family: 'Raleway', sans-serif;
+      margin: auto;
+      padding: 1em;
+      width: 50%;
+      float: left;
+      border-top: 1px solid silver;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+      border-left: 1px solid silver;
+    }
 
-}
+      .chtr {
+        /* flex: 1; */
+        display: inline-block;
+        font-family: 'Righteous', sans-serif;
+        font-size: 1em;
+        /* font-weight: bold; */
+        /* text-decoration: underline; */
+        margin: auto;
+        padding: 0.5em;
+        border: 1px solid silver;
+      }
 
-.chtr {
+      .dateTimePosted {
+        flex: 2;
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.75em;
+        font-style: italic;
+        color: silver;
+        margin: auto;
+        padding-left: 0.5em;
+        /* padding-right: 0.5em; */
+      }
 
-}
-
-.dateTimePosted {
-
-}
-
-.message {
-  
-}
+      .message {
+        flex: 3;
+        font-family: 'Raleway', sans-serif;
+        margin: auto;
+        /* border-left: 1px solid black; */
+        /* padding-left: 0.5em; */
+      }

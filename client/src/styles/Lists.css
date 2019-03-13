@@ -1,11 +1,42 @@
 .container {
-
+  display: block;
+  margin: auto;
+  padding: 1em;
+  width: 100%;
+  /* max-width: 50vw; */
+  float: left;
 }
 
-.list {
+  .list {
+    margin: auto;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    padding: 1em;
+  }
 
-}
+    .listTitle {
+      font-family: 'Righteous', sans-serif;
+      /* font-weight: bold; */
+      margin: auto;
+    }
 
-.option {
-  
-}
+    .option {
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      /* border: 1px solid silver; */
+      cursor: pointer;
+    }
+
+      .option:hover {
+        border: 1px solid black;
+        text-shadow: 1px 1px 1px grey;
+        box-shadow: 1px 1px 1px grey;
+      }
+
+    .selectedOption {
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      border: 1px solid silver;
+      /* text-shadow: 1px 1px 1px grey;
+      box-shadow: 1px 1px 1px grey; */
+    }
